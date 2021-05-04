@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(178,218,250);
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+    -webkit-border-radius: 20%;
+}
+
+.header {}
+
+.header__top {}
+
+.header__list {
+    color: red;
+}
+.logo {
+    /* common styles */
+}
+.logo__link {}
+.logo__img {}
+.header__logo {
+    /* pазмер расположение именно в header*/
+}
+
+.footer__logo {
+    /* размер, расположение в footer*/
+}
+
+.herader__social {
+
+}
+
+
+
+
+.title {
+     /* общие стили  */
+     /* общие стили  */
+     /* общие стили  */
+     /* общие стили  */
+     /* общие стили  */
+}
+
+
+.title--orange {
+    color: orange;
+}
+
+.smoothies__title {
+    /* color: orange; */
+    /* center */
+}
+.about__title {
+    color: rgb(255,255,255);
+    /* left */
+}
+.story__title {
+    /* color: orange; */
+    /* left */
+}
+.testimonials__title {
+    /* color: orange; */
+    /* right */
+}
+.blog__title {
+    /* color: orange; */
+    /* center */
+}
