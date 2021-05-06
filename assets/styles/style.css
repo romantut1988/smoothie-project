@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(178,218,250);
+    background-color: #fff;
     border-radius: 20%;
     -webkit-border-radius: 20%;
     -moz-border-radius: 20%;
@@ -8,21 +8,23 @@ body {
     -webkit-border-radius: 20%;
 }
 
-.header {}
+.header {
+    background-image: url(../images/header-bg-img.png);
+    background-color:rgb(236,167,61);
+}
 
 .header__top {}
 
-.header__list {
-    color: red;
-}
+.header__list {}
 .logo {
     /* common styles */
 }
 .logo__link {}
-.logo__img {}
+.logo__img { }
 .header__logo {
-    /* pазмер расположение именно в header*/
+    texpos
 }
+
 
 .footer__logo {
     /* размер, расположение в footer*/
@@ -53,7 +55,6 @@ body {
     /* center */
 }
 .about__title {
-    color: rgb(255,255,255);
     /* left */
 }
 .story__title {
