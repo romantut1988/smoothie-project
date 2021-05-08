@@ -1,5 +1,4 @@
 body {
-    background-color: #fff;
     border-radius: 20%;
     -webkit-border-radius: 20%;
     -moz-border-radius: 20%;
@@ -8,31 +7,80 @@ body {
     -webkit-border-radius: 20%;
 }
 
-.header {
-    background-image: url(../images/header-bg-img.png);
-    background-color:rgb(236,167,61);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
 }
 
-.header__top {}
+.container {
+    width: 100%;
+    min-width: 1720px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100vh;
+    background-image: url(../images/header-bg-img.png); 
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 100px;
+    padding: 70px 110px 105px 110px;
+}
+
+.header__nav {}
 
 .header__list {}
+
 .logo {
     /* common styles */
 }
 .logo__link {}
-.logo__img { }
+
+.logo__img {}
+
 .header__logo {
-    texpos
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
+.header__button button button--green {
+    background-color: #0aa566;
+    width: 280px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.div {}
+
+.about__wraper {}
 
 .footer__logo {
     /* размер, расположение в footer*/
 }
 
-.herader__social {
+.herader__social {}
 
-}
+.header__list nav {}
+
+.nav__item {}
+
+.nav__link {}
 
 
 
@@ -46,9 +94,7 @@ body {
 }
 
 
-.title--orange {
-    color: orange;
-}
+.title--orange {}
 
 .smoothies__title {
     /* color: orange; */
