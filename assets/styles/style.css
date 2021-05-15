@@ -1,113 +1,287 @@
-ul{
+@font-face{
+    font-family: Muli;
+    src: url('../fonts/Muli-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Muli;
+    src: url('../fonts/Muli-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: Muli;
+    src: url('../fonts/Muli-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Muli;
+    src: url('../fonts/Muli-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face{
+    font-family: Muli;
+    src: url('../fonts/Muli-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: Muli;
+    src: url('../fonts/Muli-Semi-BoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: italic;
+}
+
+body {
+    font-family: Muli, sans-serif;
+    color: #fff;
+}
+
+ul {
 list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.header{
-    background-image: url('/assets/images/header-bg-img.png');
+.header {
+    background-image: url(../images/header.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     position: relative;
 }
-.conteiner{
-    max-width: 1720px;
+
+.container {
+    max-width: 1740px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
-.header__top{
+.header__top {
     display: flex;
     justify-content: space-between;
+    padding-top: 82px;
+    margin-bottom: 122px;
 }
 
-.logo{
+.header__logo {
     position: absolute;
-    top: 0;
+    top: 69px;
     left: 50%;
     transform: translate(-50%);
 }
 
-.nav__list{
+.nav__list {
     display: flex; 
+    justify-content:space-between;
+    gap: 20px;
 }
 
-.nav__item{
-    margin-right: 10px;
+.nav__link {
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
 }
 
-.personal{
-    display: flex;
-}
-
-.header__box{
+.header__box {
     display: flex;
 }    
 
-.social{
+.personal {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.social__item { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.header__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__btn{
+    text-transform: capitalize;
+    border: none;
+    border-radius:35px;
+    padding: 0 124px 0 39px;
+    width: 280px;
+    height: 70px;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    -webkit-border-radius:35px;
+    -moz-border-radius:35px;
+    -ms-border-radius:35px;
+    -o-border-radius:35px;
+} 
+.btn{} 
+.btn--green{
+    background-color: #0aa566;
 }
 
 
+.smoothies {
+    padding: 100px 0 125px;
+}
 
-
-
-
-
-
-
-
-.smoothies {}
-
-.smothies__title {
+.smoothies__title {
     text-align: center;
     font-size: 50px;
     color: #f7ae3b;
     margin-bottom: 50px;
 }
 
-.smothies__text {
+.smoothies__text {
+    max-width: 920px;
+    text-align: center;
+    margin: 0 auto;
     font-size: 18px;
     color: #1e1e1e;
-    margin-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .smoothies__content {
+    justify-content: center;
     display: flex;
-    font-size: 25px;
-    color: #f7ae3b;
     flex-direction: column;
-
     width: 1010px;
     margin: 0 auto;
+    align-items: center;
+    background-color: #f6edde;
 }
 
-.smothies__el1{
+.smoothies__el1 {
     display: flex;
     align-items: baseline;
-    margin-bottom: 40px;
-    border-bottom: 3px solid;
+    background-color:#fff;
+    margin-bottom: 35px;
 }
 
-.smothies__el2{
+.smoothies__el2 {
     display: flex;
     align-items: baseline;
-    border-bottom: 3px solid;
+    background-color:#fff;
 }
 
 .smoothies__item {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
+    align-items:center;
+    width: 260px;
+    height: 180px;
+    background-color:#fff;
 }
 
-.smoothies__img{
-    margin-bottom: 10px;
+.smoothies__img {
+    margin: 40px 0 15px;
 }
 
 .smoothies__discr{
-    margin-bottom: 10px;
+    font-size: 25px;
+    color: #f7ae3b;
+}
+
+.container__inner{
+max-width: 1024px;
+margin: 0 auto;
+}
+
+.about {
+    display: flex;
+    background-color:#127f72;
+    padding-left: 140px;
+}
+
+.about__img {
+    transform: translateY(63px);
+    -webkit-transform: translateY(63px);
+    -moz-transform: translateY(63px);
+    -ms-transform: translateY(63px);
+    -o-transform: translateY(63px);
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+    margin: 142px;
+}
+
+.about__content {
+}
+
+.about__item {}
+
+
+
+.products__wrapper {
+    display: flex;
+}
+
+.blog__wrapper {
+    display: flex;  
+}
+
+
+.story__content {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.instagram__wrapper {
+    display: flex;
 }
