@@ -42,7 +42,13 @@
     font-display: swap;
     font-style: italic;
 }
-
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Muli, sans-serif;
     color: #fff;
@@ -162,7 +168,7 @@ a {
 
 
 .smoothies {
-    padding: 100px 0 125px;
+    padding: 1px 0 125px;
 }
 
 .smoothies__title {
@@ -350,11 +356,7 @@ margin: 0 auto;
 }
 
 .story__content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 129px 0 78px;
+    padding: 308px 351px 58px 206px;
 }
 
 .story__title {
@@ -387,31 +389,70 @@ margin: 0 auto;
 
 
 .testimonials {
-    text-align: center;
-    height: 720px;
-    background-color: #632d1b; 
+    background-color: #632d1b;
+    padding: 117px 0 80px;
     }
 
+.testimonials__review {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 121px;
+}
+
+.testimonials__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 470px;
+    margin-right: 50px;
+    padding-top: 20px;
+}
+
+.testimonials__info {
+    text-align: center;
+    margin-bottom: 19px;
+    font-family: Muli;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
 .testimonials__title {
+    text-align: center;
     font-size: 50px;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: #f7ae3b;
+    margin-bottom: 118px;
 }
 
 .testimonials__quote {
     font-family: Muli;
     font-size: 18px;
     color: #ffffff;
+    margin-bottom: 20px;
+    
+
 
 }
 
 .testimonials__cite {
     color: #f7ae3b;
+    line-height: 45px;
+font-weight: 600;
+font-style: italic;
+color: #f7ae3b;
 }
+
+.blog {}
 
 .blog__wrapper {
     display: flex;
+    padding-top: 162px;
+    padding-left: 355px;
 }
 
 .blog__title {
@@ -421,16 +462,17 @@ margin: 0 auto;
     color: #f7ae3b;
 }
 
+.blog__textbox {
+    margin-left: 68px;
+}
+
 .blog__subtitle {
     font-size: 30px;
     line-height: 40px;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: #f2612d;
-}
-
-.blog__box {
-
+    margin-left: 68px;
 }
 
 .blog__time {
@@ -446,8 +488,21 @@ margin: 0 auto;
     color: #1e1e1e;
 }
 
+.blog__text {
+    margin-left: 60px;
+}
+
+
+
+
+
+
+
+
 .instagram__wrapper {
     display: flex;
+    padding-top: 165px;
+    padding-left: 358px;
 }
 
 .instagram__title {
@@ -459,9 +514,6 @@ margin: 0 auto;
     width: 100%;
     color: #0aa566;
 }
-
-
-
 
 .instagram__wrapper {
     display: flex;
