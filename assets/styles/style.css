@@ -272,8 +272,10 @@ margin: 0 auto;
 }
 
 .about__btn {
-    color: #fff;
-    font-size: 21px;
+    width: 382px;
+height: 63px;
+border: 2px solid #f8b231;
+border-radius: 30px;
 }
 
 .about__subtext--title {
@@ -320,7 +322,15 @@ margin: 0 auto;
 .products__text{
     margin-bottom: 80px;
 }
-.products__btn {}
+.products__btn {
+    width: 180px;
+    border-radius: 30px;
+    padding: 0px 38px;
+    height: 60px;
+    font-family: Muli;
+    font-size: 21px;
+    background-color:#ffffff;
+}
 
 .products__item--orange {
     background-color: #662a13;
@@ -349,39 +359,37 @@ margin: 0 auto;
 
 .story__container {
     display: flex;
-    justify-content: center;
-    align-items:center;
-    color: #f7ae3b;
-    margin-bottom: -10px;
+    align-items: center;
+    margin: 120px 200px 160px 285px;
+    max-width: 1320px;
 }
 
-.story__content {
-    padding: 308px 351px 58px 206px;
-}
+.story__content {}
 
 .story__title {
     font-family: Muli;
     font-size: 50px;
-    line-height: 43px;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: #f7ae3b;
 }
 
 .story__text{
-    font-family: Muli;
+    max-width: 510px;
     font-size: 18px;
+    line-height: 1.94;
     color: #1e1e1e;
+    margin-bottom: 40px;
 }
 
 .story__box {
-    margin: 140px 100px 150px 100px;
+    padding-left: 230px;
 }
 
 .story__btn {
     width: 304px;
     height: 63px;
-    font-size: 18px;
+    font-size: 21px;
     background-color: #0aa566;
     border-radius: 30px;
     color: #fff;
@@ -442,9 +450,9 @@ margin: 0 auto;
 .testimonials__cite {
     color: #f7ae3b;
     line-height: 45px;
-font-weight: 600;
-font-style: italic;
-color: #f7ae3b;
+    font-weight: 600;
+    font-style: italic;
+    color: #f7ae3b;
 }
 
 .blog {}
@@ -456,53 +464,52 @@ color: #f7ae3b;
 }
 
 .blog__title {
-    display: flex;
     font-size: 50px;
-    line-height: 50px;
     color: #f7ae3b;
+    margin-bottom: 50px;
 }
 
 .blog__textbox {
+    margin-top: 210px;
     margin-left: 68px;
 }
 
 .blog__subtitle {
+    text-align: center;
     font-size: 30px;
-    line-height: 40px;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: #f2612d;
-    margin-left: 68px;
+    margin-left: 60px;
 }
 
 .blog__time {
     font-size: 16px;
     line-height: 35px;
     font-weight: 400;
-    color: #1e1e1e;    
+    color: #1e1e1e;  
+    margin-left: 60px;  
 }
 
 .blog__text {
-    flex-direction: column;
-    justify-content: center;
     color: #1e1e1e;
+    line-height: 1.8;
+    max-width: 480px;
 }
 
-.blog__text {
-    margin-left: 60px;
+
+
+
+
+
+.instagram {
+    margin: 0 auto;
 }
-
-
-
-
-
-
-
 
 .instagram__wrapper {
     display: flex;
-    padding-top: 165px;
-    padding-left: 358px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .instagram__title {
@@ -515,11 +522,7 @@ color: #f7ae3b;
     color: #0aa566;
 }
 
-.instagram__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: Space-between;
-}
+
 
 
 
