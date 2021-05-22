@@ -248,9 +248,9 @@ margin: 0 auto;
 }
 
 .about__content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 140px;
+    margin-left: 40px;
+    margin-top: 85px;
+    max-width: 610px;
 }
 
 .about__title {
@@ -258,13 +258,17 @@ margin: 0 auto;
 }
 
 .about__list {
+    font-family: Muli;
+    font-weight: 700;
+    font-display: swap;
     line-height: 2.4;
 }
 
 .about__item--bold {
     font-family: Muli;
-    font-weight: 700;
-    font-display: swap;
+    font-size: 21px;
+    font-weight: 800;
+    color: #ffffff;
 }
 
 .about__item {
@@ -273,9 +277,9 @@ margin: 0 auto;
 
 .about__btn {
     width: 382px;
-height: 63px;
-border: 2px solid #f8b231;
-border-radius: 30px;
+    height: 63px;
+    border: 2px solid #f8b231;
+    border-radius: 30px;
 }
 
 .about__subtext--title {
@@ -314,13 +318,13 @@ border-radius: 30px;
     padding: 129px 0 78px;
 }
 .products__img{
-    margin-bottom: 34px;
+    margin-bottom: 35px;
 }
 .products__title{
     margin-bottom: 10px;
 }
 .products__text{
-    margin-bottom: 80px;
+    margin-bottom: 65px;
 }
 .products__btn {
     width: 180px;
@@ -443,9 +447,6 @@ border-radius: 30px;
     font-size: 18px;
     color: #ffffff;
     margin-bottom: 20px;
-    
-
-
 }
 
 .testimonials__cite {
@@ -530,16 +531,74 @@ border-radius: 30px;
 .footer {}
 
 .footer__top {
+    padding: 24px 24px 32px;
     display: flex;
-    justify-content: center;
-    align-items:center;
+    justify-content: space-around;
+    align-items: center;
     background-color: #f4a73e;
 }
 
+.footer__logo {
+    margin: 130px 295px 165px 100px;
+    width: 211px;
+    height: 72px;
+}
 
+.footer__info {
+    font-family: Muli;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
 
+.footer__title {
+    display: flex;
+    align-items:center;
+    margin-left: 150px;
+    font-family: Muli;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin-left: 150px;
+}
 
+.info__list {
+    margin: 40px 150px 110px;
+}
 
 .info__item {
-    color: #1e1e1e;
+    color: #6d450c;
+}
+
+.footer__payment {
+}
+
+.footer__box {
+}
+
+.footer__social {
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:#6d301c;
+}
+
+.footer__small {
+    font-family: Muli;
+    font-size: 13px;
+    line-height: 35px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #af8a82;
+}
+
+.footer__link {
+    color:#ffffff;
 }
