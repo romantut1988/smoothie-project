@@ -250,7 +250,7 @@ a {
     text-align: center;
     font-size: 50px;
     color: #f7ae3b;
-    margin-bottom: 50px;
+    padding: 100px 0 50px;
 }
 
 .smoothies__text {
@@ -259,7 +259,7 @@ a {
     margin: 0 auto;
     font-size: 18px;
     color: #1e1e1e;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .smoothies__content {
@@ -609,7 +609,6 @@ margin: 0 auto;
 .footer {}
 
 .footer__top {
-    padding: 24px 24px 32px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -617,31 +616,23 @@ margin: 0 auto;
 }
 
 .footer__logo {
-    margin: 130px 295px 165px 100px;
-    width: 211px;
-    height: 72px;
+}
+
+.footer__container {
+    display: flex;
 }
 
 .footer__info {
     font-family: Muli;
     font-size: 26px;
-    line-height: 40px;
-    font-weight: 800;
     letter-spacing: -0.02em;
     color: #ffffff;
 }
 
 .footer__title {
-    display: flex;
-    align-items:center;
-    margin-left: 150px;
-    font-family: Muli;
-    font-size: 26px;
-    line-height: 40px;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-    margin-left: 150px;
+}
+
+.footer__btn-follow {
 }
 
 .box__newletter {
@@ -654,7 +645,6 @@ margin: 0 auto;
 }
 
 .info__list {
-    margin: 40px 150px 110px;
 }
 
 .info__item {
@@ -668,6 +658,11 @@ margin: 0 auto;
 }
 
 .footer__social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+
 }
 
 .footer__bottom {
@@ -688,5 +683,9 @@ margin: 0 auto;
 
 .footer__link {
     color:#ffffff;
+}
+
+.payment__img {
+    
 }
 
