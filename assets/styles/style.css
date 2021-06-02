@@ -173,11 +173,11 @@ a {
 .social {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap:30px;
 
     padding-left: 70px;
 
-    position: relative;
+    /* position: relative; */
 }
 
 .social::before{
@@ -277,24 +277,28 @@ a {
 
 .smoothies__el1 {
     display: flex;
-    align-items: baseline;
-    background-color:#fff;
-    margin-bottom: 2px;
+    background-color: #fff;
+    align-items: flex-end;
+    border-bottom: 2px solid black;
 }
 
 .smoothies__el2 {
     display: flex;
-    align-items: baseline;
-    background-color:#fff;
+    background-color: #fff;
+    align-items: flex-end;
 }
 
 .smoothies__item {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     width: 260px;
-    height: 180px;
-    background-color:#fff;
+    background-color: #fff;
+    border-right: 2px solid black;
+}
+.smoothies__item:last-child{
+    
+    border-right:none;
 }
 
 .smoothies__img {
@@ -463,7 +467,7 @@ margin: 0 auto;
     background-color: #662a13;
 }
 
-..products__item--orange::after {
+.products__item--orange::after {
     position: absolute;
     color:red;
 }
@@ -492,15 +496,26 @@ margin: 0 auto;
 .story {
 }   
 
-.story__container {
+.story__wrap {
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 120px 0 160px;
     justify-content: center;
+    position: relative;
+}
+
+.story__wrap::after {
+    content: '';
+    position: absolute;
+    top: 810px;
+    right: 70px;
+    background-image: url(../images/dots.png);
+    width: 410px;
+    height: 301px;
 }
 
 .story__content {
-    margin-right: 150px;
+    margin-right: 205px;
 }
 
 .story__title {
@@ -522,6 +537,18 @@ margin: 0 auto;
 
 .story__box {
     padding-left: 230px;
+    position: relative;
+}
+
+.story__box::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 75px;
+    background-image: url(../images/stamp.png);
+    display: block;
+    width: 290px;
+    height: 219px;
 }
 
 .story__btn {
@@ -559,6 +586,16 @@ margin: 0 auto;
     align-items: center;
     display: flex;
     margin-bottom: 121px;
+    position: relative;
+}
+
+.testimonials__review::after {
+    content: 'Sarah A';
+    font-weight: 800;
+    position: absolute;
+    top: -131px;
+    font-size: 250px;
+    color: #5a200f;
 }
 
 .testimonials__box {
@@ -566,6 +603,7 @@ margin: 0 auto;
     max-width: 470px;
     margin-right: 50px;
     padding-top: 20px;
+    z-index: 10;
 }
 
 .testimonials__info {
@@ -585,6 +623,7 @@ margin: 0 auto;
     letter-spacing: -0.02em;
     color: #f7ae3b;
     margin-bottom: 118px;
+    position: relative;
 }
 
 .testimonials__quote {
@@ -601,6 +640,17 @@ margin: 0 auto;
     font-style: italic;
     color: #f7ae3b;
     display: block;
+}
+
+.testimonials__img {
+    z-index: 10;
+}
+
+.btn__left {
+    
+    background-image:url(../images/header.png);
+    top:0;
+    left: 0;
 }
 
 .blog {
@@ -624,15 +674,14 @@ margin: 0 auto;
 }
 
 .blog__textbox::after {
-    content:'';
+    content: '';
 
     width: 645px;
     height: 15px;
-
     top: -50px;
-
     background-color: #f7ae3b;
     position: absolute;
+    border-radius: 0 10px 10px 0;
 }
 
 .blog__subtitle {
@@ -715,7 +764,7 @@ margin: 0 auto;
     width: 30px;
     height: 30px;
 
-    background-image:url(../images/icon-instagram.png);
+    background-image:url(../images/icon-insta.png);
 
     position: absolute;
 
@@ -760,9 +809,14 @@ margin: 0 auto;
     margin-top: 35px;
     border-radius: 30px;
     border-style: none;
-    outline: 0;
-    padding: 0 0 0 40px;
+    background-image: url(../images/convert.png);
+    background-repeat: no-repeat;
+    background-position: 20px;
+    font-weight: 800;
+    padding-left: 60px;
+    font-size: 18px;
 }
+
 
 .payment__box {
     display: flex;
@@ -798,13 +852,11 @@ margin: 0 auto;
 .footer__box {
 }
 
-.footer__social-list {
-    display: flex;
-    justify-content: flex-end;
-    position: static;
-    padding-left: 26px;
-
+.box__img {
+    width: 30px;
+    height: 30px;
 }
+
 
 .footer__bottom {
     display: flex;
@@ -831,5 +883,14 @@ margin: 0 auto;
     margin: 50px 0 37px 123px;
 }
 
+.footer__btn-follow {
+    margin-left: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #6d450c;
+}
 
 
