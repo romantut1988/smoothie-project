@@ -218,7 +218,15 @@ button{
     justify-content: center;
     align-items: center;
 }
-
+.btn{
+   
+    font-size: 21px;
+    line-height: 22px;
+    
+        font-weight: 800;
+        background-color: transparent;
+    
+    }
 .header__btn {
     border: none;
     border-radius: 35px;
@@ -227,8 +235,7 @@ button{
     height: 70px;
     position: relative;
     font-size: 24px;
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    
 } 
 
 .header__btn::after {
@@ -338,19 +345,19 @@ margin: 27px 0 34px 0;
     
 }
 
-.container__inner {
-max-width: 1024px;
-margin: 0 auto;
+.about {
+    background-color: #127f72;
+    padding-left: 143px;
+    max-height: 800px;
 }
 
-.about {
+.wraper {
     display: flex;
-    background-color: #127f72;
-    padding: 100px 0 0;
-    justify-content: center;
 }
 
 .about__img {
+    width: 691px;
+    height: 818px;
     transform: translateY(63px);
     -webkit-transform: translateY(63px);
     -moz-transform: translateY(63px);
@@ -360,56 +367,61 @@ margin: 0 auto;
 
 .about__content {
     margin-left: 140px;
-    margin-top: 85px;
-    max-width: 610px;
+    
+    max-width: 615px;
 }
 
 .about__title {
-    position: relative;
-    font-size: 50px;
-}
 
-.about__title::after {
+font-size: 55px;
+line-height: 60px;
+font-weight: 800;
+letter-spacing: -0.02em;
+margin-top: 100px;
+margin-bottom: 55px;
+}
+.about__title--green{
+    color: #cae941;
+    position: relative;
+}
+.about__title--green::after {
     content: '';
 
     display: block;
     width: 450px;
-    height: 7px;
-    left: 20px;
+    height: 13px;
+    left: -10px;
+    top: 60px;
 
     background-image: url(../images/line.png);
     position: absolute;
 }
 
 .about__list {
-    font-family: Muli;
-    font-weight: 700;
-    font-display: swap;
-    line-height: 2.4;
+    margin-bottom: 55px;
+    margin-left: 25px;
+    
     list-style-image: url(../images/slaid.png);
 }
-
+.about__item{
+    font-size: 21px;
+    line-height: 22px;
+    margin-bottom:21px;
+}
 .about__item--bold {
-    font-family: Muli;
-    font-size: 21px;
     font-weight: 800;
-    color: #ffffff;
 }
 
-.about__item {
-    font-size: 21px;
-}
 
 .about__btn {
-    width: 100%;
-    max-width: 382px;
+    position: relative;
+    width: 382px;
     height: 63px;
     border: 2px solid #f8b231;
     border-radius: 30px;
-    padding-left: 25px;
-    text-align: left;
-    position: relative;
-    background-color: transparent;
+    
+    text-indent: -70px;
+    
 }
 
 .about__btn::after {
@@ -422,15 +434,10 @@ margin: 0 auto;
     background-image: url(../images/arrow.png);
     top: 40%;
     
-    right: 25px;
+    right: 40px;
     
 }
 
-.about__btn.btn {
-    font-family: Muli;
-    font-size: 21px;
-    color: #ffffff;
-}
 
 .about__subtext--title {
     color: #cae941;
@@ -486,10 +493,10 @@ margin: 0 auto;
     width: 180px;
     border-radius: 30px;
     height: 60px;
-    font-family: Muli;
+    
     font-size: 21px;
     border: 1px solid #fff;
-    background-color: transparent;
+    
 }
 
 .products__item--orange {
@@ -581,10 +588,9 @@ margin: 0 auto;
 }
 
 .story__btn {
-    padding: 0 124px 0 39px;
+    
     position: relative;
-    font-weight: 800;
-    color: #ffffff;
+   
     width: 304px;
     height: 63px;
     font-size: 21px;
