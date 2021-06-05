@@ -2,6 +2,7 @@
     font-family: Muli;
     src: url('../fonts/Muli-Bold.ttf') format('truetype');
     font-weight: 700;
+    font-display: swap;
 }
 
 @font-face{
@@ -15,6 +16,7 @@
     font-family: Muli;
     src: url('../fonts/Muli-ExtraBold.woff') format('woff');
     font-weight: 800;
+    font-display: swap;
 }
 
 @font-face{
@@ -29,6 +31,7 @@
     font-family: Muli;
     src: url('../fonts/Muli-Regular.woff') format('woff');
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face{
@@ -36,6 +39,7 @@
     src: url('../fonts/Muli-Semi-BoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
+    font-display: swap;
 }
 
 *,
@@ -57,6 +61,10 @@ list-style: none;
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+button{
+    color: inherit;
 }
 
 .header {
@@ -75,13 +83,13 @@ a {
 }
 
 .header__top {
-    padding-top: 160px;
+    padding-top: 84px;
     margin-bottom: 120px;
 }
 
 .header__logo {
     position: absolute;
-    top: 145px;
+    top: 70px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -122,7 +130,7 @@ a {
 .nav__list {
     display: flex; 
     justify-content:space-between;
-    gap: 30px;
+    gap: 34px;
 }
 
 .nav__link {
@@ -131,7 +139,7 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    
 }
 
 .header__box {
@@ -142,7 +150,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 45px;
+    gap: 47px;
 }
 
 .personal__item:last-child {
@@ -173,11 +181,9 @@ a {
 .social {
     display: flex;
     justify-content: space-between;
-    gap:30px;
-
-    padding-left: 70px;
-
-    /* position: relative; */
+    gap: 3px;
+    padding-left: 136px;
+    position: relative;
 }
 
 .social::before{
@@ -186,7 +192,7 @@ a {
     width: 50px;
     height: 2px;
 
-    background-color: rgb(241, 207, 137);
+    background-color: #f1cf89;
 
     position: absolute;
     top: 20px;
@@ -217,27 +223,23 @@ a {
     border: none;
     border-radius: 35px;
     width: 280px;
-    text-align: left;
+    text-indent: -72px;
     height: 70px;
     position: relative;
     font-size: 24px;
     font-weight: 800;
     letter-spacing: -0.02em;
-    color: #ffffff;
 } 
 
 .header__btn::after {
     content: "";
-    
     width: 40px;
     height: 15px;
-
     background-image: url(../images/arrow.png);
     background-repeat: no-repeat;
     position: absolute;
     top: 50%;
-    
-    right: 40px;
+    right: 25px;
     transform: translateY(-50%);
 }
 
@@ -245,69 +247,95 @@ a {
     background-color: #0aa566;
 }
 
+
+
 .smoothies {
-    padding: 1px 0 125px;
+    padding: 100px 0 125px;
 }
 
+.title {
+    
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    
+}
+.title--orange{
+    color: #f7ae3b;
+}
 .smoothies__title {
     text-align: center;
-    font-size: 50px;
-    color: #f7ae3b;
-    padding: 100px 0 50px;
+   margin-bottom: 45px;
 }
 
 .smoothies__text {
-    max-width: 920px;
+    max-width: 915px;
     text-align: center;
     margin: 0 auto;
-    font-size: 18px;
+    margin-bottom: 60px;
+}
+.text{
+   
+font-size: 18px;
+line-height: 35px;
+
+}
+.text--black{
     color: #1e1e1e;
-    padding-bottom: 60px;
 }
-
-.smoothies__content {
+.smoothies__cards {
+    display: flex;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
-    width: 1010px;
-    margin: 0 auto;
     align-items: center;
+    /* flex-direction: column; */
+    flex: 1 0 25%;
+    flex-wrap: wrap;
+
+    max-width: 1010px;
+
+    margin: 0 auto;
+    
     background-color: #f6edde;
-}
-
-.smoothies__el1 {
-    display: flex;
-    background-color: #fff;
-    align-items: flex-end;
-    border-bottom: 2px solid black;
-}
-
-.smoothies__el2 {
-    display: flex;
-    background-color: #fff;
-    align-items: flex-end;
+    
 }
 
 .smoothies__item {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    width: 260px;
+    flex-direction: column;
+    width: 252px;
+    height: 190px;
     background-color: #fff;
-    border-right: 2px solid black;
+
+    padding-top: 27px;
+    
 }
-.smoothies__item:last-child{
+/* .smoothies__item:last-child{
     
     border-right:none;
+} */
+.smoothies__item:nth-child(-n+8) {
+    border-right: 2px solid #f6edde;
 }
-
-.smoothies__img {
-    margin: 40px 0 15px;
+.smoothies__item:nth-child(-n+4) {
+    border-bottom: 2px solid #f6edde;
 }
-
+.smoothies__item:nth-child(4),
+.smoothies__item:last-child {
+    border-right:none;
+}
 .smoothies__discr {
-    font-size: 25px;
-    color: #f7ae3b;
+   
+font-size: 25px;
+line-height: 40px;
+font-weight: 800;
+letter-spacing: -0.02em;
+color: #f2612d;
+
+margin: 27px 0 34px 0;
+    
 }
 
 .container__inner {
@@ -358,6 +386,7 @@ margin: 0 auto;
     font-weight: 700;
     font-display: swap;
     line-height: 2.4;
+    list-style-image: url(../images/slaid.png);
 }
 
 .about__item--bold {
