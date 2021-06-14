@@ -169,6 +169,9 @@ button{
 .personal__counter{
     width: 20px;
     height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     position: absolute;
     top: -15px;
@@ -185,14 +188,14 @@ button{
     -o-border-radius:50%;
 }
 .header__social{
+    padding-left: 136px;
+    position: relative;
+}
+.social {
     display: flex;
     justify-content: space-between;
     gap: 7px;
-}
-.social {
     
-    padding-left: 136px;
-    position: relative;
 }
 
 .social::before{
@@ -396,12 +399,12 @@ margin-top: 95px;
 margin-bottom: 55px;
 }
 
-.about__title--green{
+.title--yellow{
     color: #cae941;
     position: relative;
 }
 
-.about__title--green::after {
+.title--yellow::after {
     content: '';
 
     display: block;
@@ -753,22 +756,19 @@ margin-bottom: 55px;
     position: relative;
     text-align: center;
     margin: 0 0 45px 0;
+    font-size: 24px;
 }
-
+.title--green{
+    color: #0aa566;
+}
 .instagram__title::before {
     content: '';
     width: 30px;
     height: 30px;
     background-image: url(../images/icon.png);
     position: absolute;
-    top: 0;
+    top: -20px;
     left: -40px;
-}
-
-.instagram__link {
-    font-size: 24px;
-
-    color: hsl(156, 89%, 34%);
 }
 
 .instagram__wrapper {
@@ -802,18 +802,18 @@ margin-bottom: 55px;
 
 .footer__top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     background-color: #f4a73e;
-    padding: 80px 100px 90px;
+    padding: 80px 0 90px;
 }
 
 .footer__logo {
+    margin: 34px 294px 0 100px;
+   
 }
 
 .footer__info {
-    font-size: 26px;
-    letter-spacing: -0.02em;
+    margin-right: 170px;
 }
 
 .footer__title {
@@ -822,6 +822,7 @@ margin-bottom: 55px;
    
     margin-bottom: 50px;
     justify-content: center;
+   
 }
 
 
@@ -841,6 +842,7 @@ margin-bottom: 55px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px; */
+    
 }
 
 .payment__box {
@@ -849,15 +851,22 @@ margin-bottom: 55px;
     align-items: center;
     width: 270px;
     flex-wrap: wrap;
+    margin-right: 170px;
+    
 }
 
 .payment__img {
     margin-bottom: 20px;
     margin-right: 18px;
+    
 }
 
 .footer__box {
     
+}
+
+.footer__submit {
+    display: none;
 }
 
 .info__list {
@@ -865,10 +874,12 @@ margin-bottom: 55px;
     flex-direction: column;
     justify-content: space-between;
     height: 150px;
+    
 }
 
 .info__item {
     color: #6d450c;
+    
 }
 
 .footer__payment {
@@ -881,6 +892,7 @@ margin-bottom: 55px;
     justify-content: center;
     align-items:center;
     background-color:#6d301c;
+   
 }
 
 .footer__small {
@@ -890,6 +902,7 @@ margin-bottom: 55px;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #af8a82;
+    
 }
 /* 
 .footer__link {
@@ -898,6 +911,7 @@ margin-bottom: 55px;
 
 .footer__inner {
     display: flex;
+    justify-content: space-between;
     margin: 50px 0 37px 123px;
 }
 
@@ -906,6 +920,7 @@ margin-bottom: 55px;
     font-size: 18px;
     text-transform: uppercase;
     color: #6d450c;
+    
 }
 
 
