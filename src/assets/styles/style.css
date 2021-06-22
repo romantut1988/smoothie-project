@@ -325,6 +325,7 @@ button{
             max-width:700px;
             }
         }
+
 .text {
 
 font-size: 18px;
@@ -776,8 +777,8 @@ margin-bottom: 55px;
 }
 
 .testimonials__review::after {
-    /* display: block; */
-    /* width: 800px; */
+    display: block;
+    max-width: 800px;
     content: 'Sarah A';
     font-weight: 800;
     position: absolute;
@@ -787,25 +788,7 @@ margin-bottom: 55px;
     color: #5a200f;
 }
 
-@media only screen and (max-width: 1335px) {
-    
-    .testimonials__review::after { 
 
-        left: 240px;
-     
-      }
-}
-
-@media only screen and (max-width: 1100px) {
-    
-    .testimonials__review::after { 
-
-        left: 60px;
-        font-size: 175px;
-        
-       
-    }
-}
 @media only screen and (max-width: 768px) {
     
     .testimonials__review::after { 
@@ -899,29 +882,54 @@ margin-bottom: 55px;
 }
 
 .blog {
-    padding: 100px 0;
+    padding: 100px 50px;
 }
 
 .blog__wrap {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
- 
+
+@media only screen and (max-width: 768px) {
+    
+.blog__wrap { 
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-left: 30px;
+    }
+}
+
+.blog__box {
+    margin-right: 65px;
+}
+
 .blog__title {
-   
     margin-bottom: 50px;
 }
+
 
 .blog__textbox {
     position: relative;
     margin-top: 210px;
 }
 
+@media only screen and (max-width: 768px) {
+    
+    .blog__textbox { 
+            margin-top: 20px;
+
+        }
+    }
+
+
 .blog__textbox::after {
     content: '';
     width: 645px;
     height: 15px;
     top: -50px;
+    right: -30px;
     background-color: #f7ae3b;
     position: absolute;
     border-radius: 0 10px 10px 0;
@@ -931,12 +939,20 @@ margin-bottom: 55px;
     -o-border-radius: 0 10px 10px 0;
 }
 
+@media only screen and (max-width: 768px) {
+    
+    .blog__textbox::after { 
+            display: none;
+            margin-top: 20px;
+
+        }
+    }
+
 .blog__subtitle {
     font-size: 30px;
     font-weight: 800;
     letter-spacing: -0.02em;
     color: #f2612d;
-    margin-left: 65px;
 }
 
 .blog__time {
@@ -944,14 +960,19 @@ margin-bottom: 55px;
     line-height: 35px;
     font-weight: 400;
     color: #1e1e1e;
-    margin-left: 65px;
 }
 
 .blog__text {
-   
-    max-width: 425px;
+    max-width: 475px;
     margin-left: 125px;
 }
+
+@media only screen and (max-width: 768px) {
+    
+    .blog__text { 
+        margin-left: 95px;
+        }
+    }
 
 .instagram {
     display: flex;
@@ -965,9 +986,11 @@ margin-bottom: 55px;
     margin: 0 0 45px 0;
     font-size: 24px;
 }
+
 .title--green{
     color: #0aa566;
 }
+
 .instagram__title::before {
     content: '';
     width: 30px;
@@ -985,6 +1008,9 @@ margin-bottom: 55px;
 
 .instagram__picture {
     position: relative;
+    display: flex;
+    width: 384px;
+    height: 384px;
 }
 
 .instagram__img {
