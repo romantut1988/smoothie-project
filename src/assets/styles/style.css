@@ -275,6 +275,7 @@ button{
 .btn--green {
     background-color: #0aa566;
 }
+
 @media only screen and (max-width: 768px) {
     .header__logo {
         top: 90px;        
@@ -284,16 +285,19 @@ button{
         margin-bottom: 190px;
     }
 }
+
 .smoothies {
     padding: 100px 0 110px;
     
 }
+
 @media only screen and (max-width: 768px) {
     .smoothies {
         
         padding: 50px 0 110px;
     }
-    }
+}
+
 .title {
     font-size: 50px;
     line-height: 40px;
@@ -929,7 +933,7 @@ margin-bottom: 55px;
     width: 645px;
     height: 15px;
     top: -50px;
-    right: -30px;
+    right: 20px;
     background-color: #f7ae3b;
     position: absolute;
     border-radius: 0 10px 10px 0;
@@ -1024,7 +1028,7 @@ margin-bottom: 55px;
     height: 30px;
 
     background-image:url(../images/icon-insta.png);
-
+    background-repeat: no-repeat;
     position: absolute;
 
     bottom: 20px;
@@ -1153,7 +1157,7 @@ margin-bottom: 55px;
 
 .footer__small {
     font-family: Muli;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 35px;
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -1181,6 +1185,9 @@ margin-bottom: 55px;
     left: -62px;
     top: 34px;
     font-size: 16px;
+
+    background-image:url(../images/icons-footer.png);
+    background-repeat: no-repeat;
     line-height: 40px;
     font-weight: 700;
     letter-spacing: -0.02em;
