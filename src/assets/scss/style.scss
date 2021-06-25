@@ -1,6 +1,28 @@
-body {
-    background-color: rgb(37, 37, 37);
-    color: white;
-}
+@import  "./base/normalize";
+@import  "./base/fonts";
 
-@import './style2.scss'
+@import  "./abstracts/mixins";
+@import  "./abstracts/variables";
+
+@import  "./components/burger";
+@import  "./components/buttons";
+@import  "./components/info";
+@import  "./components/nav";
+@import  "./components/navigation";
+@import  "./components/payment";
+@import  "./components/personal";
+@import  "./components/social";
+@import  "./components/text";
+@import  "./components/title";
+
+@import  "./layout/header";
+@import  "./layout/smoothies";
+@import  "./layout/about";
+@import  "./layout/products";
+@import  "./layout/story";
+@import  "./layout/testimonials";
+@import  "./layout/blog";
+@import  "./layout/instagram";
+@import  "./layout/footer";
+
+

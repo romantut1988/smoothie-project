@@ -1,0 +1,29 @@
+.personal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    
+&__item:last-child {
+    position: relative;
+}
+
+&__counter {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: -15px;
+    right: -14px;
+
+    color: black;
+
+    background-color: #fff;
+
+    border-radius: 50%;
+    
+}
+}

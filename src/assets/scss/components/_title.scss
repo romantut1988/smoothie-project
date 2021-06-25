@@ -1,0 +1,38 @@
+
+.title {
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+
+    .title--orange {
+        color: #f7ae3b;
+    }
+    
+.title--yellow {
+    color: #cae941;
+    position: relative;
+}
+
+.title--yellow::after {
+    content: '';
+
+    display: block;
+    width: 450px;
+    height: 13px;
+    left: -10px;
+    top: 60px;
+
+    background-image: url(../images/line.png);
+    position: absolute;
+}
+
+.title--green {
+    color: #cae941;
+}
+
+.title--green {
+    color: #0aa566;
+}
+
+}

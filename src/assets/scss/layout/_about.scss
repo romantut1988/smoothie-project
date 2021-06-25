@@ -1,0 +1,77 @@
+.about {
+    background-color: #127f72;
+    min-height: 800px;
+
+    &__wraper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__img {
+        max-width: 691px;
+        height: 818px;
+        margin-right: 140px;
+        transform: translate(40px, 63px);
+    }
+    @media only screen and (max-width: 1368px) {
+        &__img {
+            width: 100%;
+        }
+    }
+
+    &__content {
+        max-width: 615px;
+    }
+
+    @media only screen and (max-width: 1368px) {
+
+        &__content {
+            margin-left: 0;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__title {
+        font-size: 55px;
+        line-height: 60px;
+        margin-top: 95px;
+        margin-bottom: 55px;
+    }
+
+    &__list {
+        margin-bottom: 55px;
+        margin-left: 25px;
+        list-style-image: url(../images/slaid.png);
+    }
+
+    &__item {
+        font-size: 21px;
+        line-height: 22px;
+        margin-bottom: 21px;
+    }
+
+    &__item--bold {
+        font-weight: 800;
+    }
+
+    &__btn {
+        position: relative;
+        max-width: 382px;
+        width: 100%;
+        border: 2px solid #f8b231;
+        text-indent: -70px;
+        margin-bottom: 100px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 15px;
+            position: absolute;
+            background-image: url(../images/arrow.png);
+            top: 40%;
+            right: 40px;
+        }
+    }
+}

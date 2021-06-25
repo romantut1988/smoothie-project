@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/normalize.css">
-    <link rel="stylesheet" href='./assets/styles/style.css'>
+    
+    <link rel="stylesheet" href='/assets/css/style.min.css'>
     <title>Smoothies</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="top">
         <div class="container">
             <div class="header__top">
                 <nav class="header__nav navigation">
@@ -87,6 +87,7 @@
     </header>
 
     <section class="smoothies">
+        <div class="container">
         <h2 class="smoothies__title title title--orange">What are these smoothies?</h2>
         <p class="smoothies__text text text--black">A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes
             dairy products (milk, yogurt, ice-cream or cottage cheese), typically using a blender. Smoothies may be made
@@ -129,12 +130,12 @@
                 </div>
             </div>
         </div>
-        </div>
-
+     
     </section>
 
-    <section class="about">
-        <div class="about__wraper">
+<section class="about"> 
+    <div class="container">
+    <div class="about__wraper">
         <img class="about__img" src="./assets/images/mat cha.png" alt="">
         <div class="about__content">
             <h2 class="about__title title">What makes Smoothie an <span class="title--yellow">awesome
@@ -153,9 +154,10 @@
             <button class="about__btn btn">About Organic Smoothie</button>
         </div>
     </div>
-    </section>
+</div>
+    </section> -->
 
-    <section class="products">
+    <section class="products"> 
         <div class="products__wrapper">
             <div class="products__item products__item--orange">
                 <img class="products__img" src="./assets/images/chocolate.png" alt="">
@@ -182,9 +184,10 @@
                 <button class="products__btn btn">Buy</button>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="story">
+ <section class="story"> 
+    <div class="container">
         <div class="story__wrap">
             <div class="story__content">
                 <h2 class="story__title title title--orange">Our story</h2>
@@ -197,9 +200,10 @@
                 <img class="story__img" src="./assets/images/drink.png" alt="">
             </div>
         </div>
+    </div>
     </section>
 
-    <section class="testimonials">
+<section class="testimonials">
         <h2 class="testimonials__title title title--orange">Why clients LOVE us?</h2>
         <article class="testimonials__review">
             <div class="testimonials__box">
@@ -213,7 +217,7 @@
             <button class="testmonials__btn btn btn--left"></button>       
             <button class="testmonials__btn btn"></button>
         </div>
-    </section>
+    </section> -->
 
     <section class="blog">
         <div class="blog__wrap">
@@ -232,7 +236,7 @@
         </div>
     </section>
 
-    <section class="instagram">
+    <section class="instagram"> 
         <h2 class="instagram__title title title--green">
             <a href="" class="instagram__link">ashasuperfoods</a>
         </h2>
@@ -253,16 +257,19 @@
                 <img class="instagram__img" src="./assets/images/ris-5.png" alt="">
             </div>
         </div>
-    </section>
+    </section> -->
 
     <footer class="footer">
         
             <div class="footer__top">
+                <div class="container">
+                    <div class="footer__wrapper">
                 <div class="footer__logo logo">
                     <a class="logo__link" href="">
                         <img class="logo__img" src="./assets/images/logo footer.png" alt="logo">
                     </a>
                 </div>
+                
                 <div class="footer__info info">
                     <h4 class="footer__title title">Information</h4>
                     <ul class="info__list">
@@ -286,6 +293,7 @@
                         <img class="payment__img" src="./assets/images/visa.png" alt="">
                     </div>
                 </div>
+            
                 <div class="footer__box">
                     <h4 class="footer__title title">Don’t miss out!</h4>
                    
@@ -318,7 +326,7 @@
         </div>
         <div class="footer__bottom">
             <small class="footer__small">© 2020. All Rights Reserved.</small>
-            <a class="footer__link" href="">Go top</a>
+            <a class="footer__link" href="#top"></a>
         </div>
         
     </footer>

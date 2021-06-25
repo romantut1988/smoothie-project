@@ -1,0 +1,13 @@
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width:1368px) {
+       & {
+            display: none;
+        }
+    
+    
+    }
+}

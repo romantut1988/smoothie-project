@@ -1,0 +1,20 @@
+.burger {
+    display: none;
+
+    cursor: pointer;
+
+    position: fixed;
+
+    top: 30px;
+    left: 20px;
+
+    &__img {
+        width: 30px;
+    }
+
+    @media (max-width:1368px) {
+        & {
+            display: block;
+        }
+    }
+}

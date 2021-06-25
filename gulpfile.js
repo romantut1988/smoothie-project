@@ -54,7 +54,9 @@ const path = {
 // Если нужно выполнять преобразование файлов в определенном порядке, то используем массив с нужным нам порядком:
 const jsFiles = [
     srcPath + 'assets/js/lib.js',
-    srcPath + 'assets/js/main.js'
+    srcPath + 'assets/js/main.js',
+    srcPath + 'assets/js/burger.js'
+
 ]
 
 
@@ -241,9 +243,9 @@ function watchFiles() {
     gulp.watch([path.watch.fonts], fonts);
 }
 
-
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts)); // Будет запускаться по команде gulp build
-const watch = gulp.parallel(build, watchFiles, serve); // Будет запускаться по дефолтной команде gulp 
+const watch = gulp.series(build, gulp.parallel(serve, watchFiles)); // Будет запускаться по дефолтной команде gulp
+
 
 
 // Экспорты тасок

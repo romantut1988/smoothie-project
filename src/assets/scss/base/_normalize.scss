@@ -2,7 +2,39 @@
 
 /* Document
    ========================================================================== */
-
+   *,
+   *::after,
+   *::before {
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
+       /* border: 1px solid red; */
+   }
+   
+   body {
+       font-family: Muli, sans-serif;
+       color: #fff;
+       
+   }
+   
+   ul {
+   list-style: none;
+   }
+   
+   a {
+       text-decoration: none;
+       color: inherit;
+   }
+   button{
+       color: inherit;
+       background-color: transparent;
+       border: none;
+   }
+   .container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
