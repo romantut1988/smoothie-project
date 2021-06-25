@@ -833,11 +833,8 @@ template {
     max-width: 691px;
     height: 818px;
     margin-right: 140px;
-    transform: translate(40px, 63px);
     -webkit-transform: translate(40px, 63px);
-    -moz-transform: translate(40px, 63px);
-    -ms-transform: translate(40px, 63px);
-    -o-transform: translate(40px, 63px);
+    transform: translate(40px, 63px);
 }
 
 @media only screen and (max-width: 1368px) {
@@ -891,6 +888,7 @@ template {
 
 .about__btn::after {
     content: '';
+    display: block;
     width: 30px;
     height: 15px;
     position: absolute;

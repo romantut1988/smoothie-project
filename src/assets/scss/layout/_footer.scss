@@ -1,11 +1,10 @@
+.footer {
 
-.footer__top {
-
+&__top {
     background-color: #fead2d;
-
 }
 
-.footer__wrapper {
+&__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,34 +12,31 @@
     padding: 80px 0 95px;
 }
 
-.footer__logo {
+&__logo {
     flex-basis: 28%;
-
 }
 
-.footer__info {
+&__info {
     flex-basis: 18%;
 }
 
-.footer__title {
+&__title {
     font-size: 26px;
     align-items: center;
 
     margin-bottom: 20px;
     justify-content: center;
-
 }
 
-.footer__payment {
+&__payment {
     flex-basis: 23%;
 }
 
-
-.footer__box {
+&__box {
     flex-basis: 29%;
 }
 
-.footer__newletter {
+&__newletter {
     max-width: 495px;
     width: 100%;
     height: 60px;
@@ -53,17 +49,15 @@
     font-size: 18px;
 }
 
-.footer__submit {
+&__submit {
     display: none;
 }
 
-
-
-.footer__form {
+&__form {
     position: relative;
 }
 
-.footer__btn {
+&__btn {
     font-size: 18px;
     margin-right: 43px;
     text-transform: uppercase;
@@ -71,7 +65,7 @@
     position: relative;
 }
 
-.footer__btn::after {
+&__btn::after {
     content: '';
     background-image: url(../images/arrow-footer.png);
     background-repeat: no-repeat;
@@ -82,23 +76,17 @@
     left: 115px;
 }
 
-/* 
-.footer__link {
-    color:#ffffff;
-} */
-
-.footer__inner {
+&__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
-.footer__social-list {
+&__social-list {
     gap: 22px;
 }
 
-.footer__bottom {
+&__bottom {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,17 +94,16 @@
     height: 80px;
 }
 
-.footer__small {
+&__small {
     font-family: Muli;
     font-size: 16px;
     line-height: 35px;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #af8a82;
-
 }
 
-.footer__link {
+&__link {
     width: 53px;
     height: 53px;
 
@@ -131,7 +118,7 @@
     -o-border-radius: 5px;
 }
 
-.footer__link::after {
+&__link::after {
     content: 'Go top';
     display: block;
     position: absolute;
@@ -147,7 +134,7 @@
     color: #ffffff;
 }
 
-.footer__link::before {
+&__link::before {
     content: '';
     background: no-repeat center/cover url(../images/arrow-white.png);
     display: block;
@@ -157,5 +144,5 @@
     width: 13px;
     height: 25px;
     background-color: #ffffff;
-
+}
 }

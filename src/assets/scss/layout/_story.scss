@@ -1,5 +1,6 @@
+.story {
 
-.story__wrap {
+&__wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,14 +11,12 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-    .story__wrap {
+    &__wrap {
         padding: 65px 0 70px;
     }
 }
 
-
-.story__content {
+&__content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -25,17 +24,16 @@
     margin: 0 190px 0px 0px;
 }
 
-.story__title {
+&__title {
     margin-bottom: 45px;
 }
 
-.story__text {
+&__text {
     max-width: 515px;
-
     margin-bottom: 50px;
 }
 
-.story__box {
+&__box {
     position: relative;
     display: flex;
     justify-content: center;
@@ -43,17 +41,16 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-    .story__box {
+    &__box {
         margin-left: 125px;
     }
 }
 
-.story__img {
+&__img {
     width: 100%;
 }
 
-.story__box::after {
+&__box::after {
     content: '';
     position: absolute;
     top: 15px;
@@ -65,14 +62,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-    .story__box::after {
+    &__box::after {
         top: 20px;
         left: -165px;
     }
 }
 
-.story__btn {
+&__btn {
     position: relative;
     max-width: 304px;
     width: 100%;
@@ -81,26 +77,23 @@
     text-indent: 30px;
     font-size: 21px;
     background-color: #0aa566;
-
-
 }
 
 @media only screen and (max-width: 768px) {
-
-    .story__btn {
+    &__btn {
         margin-bottom: 80px;
     }
 }
 
-.story__btn::after {
+&__btn::after {
     content: '';
     display: block;
     width: 30px;
     height: 15px;
 
-
     position: absolute;
     background-image: url(../images/arrow.png);
     top: 20px;
     right: 45px;
+}
 }

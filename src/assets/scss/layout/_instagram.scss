@@ -1,6 +1,6 @@
+.instagram {
 
-
-.instagram__title {
+&__title {
     position: relative;
     text-align: center;
     margin: 0 auto 45px;
@@ -11,7 +11,7 @@
     width: 180px;
 }
 
-.instagram__title::before {
+&__title::before {
     content: '';
     display: block;
     width: 30px;
@@ -22,13 +22,13 @@
     left: -40px;
 }
 
-.instagram__wrapper {
+&__wrapper {
     display: flex;
     margin-bottom: 10px;
     overflow-x: scroll;
 }
 
-.instagram__picture {
+&__picture {
     position: relative;
     display: flex;
 
@@ -51,4 +51,5 @@
 
     bottom: 20px;
     right: 20px;
+}
 }

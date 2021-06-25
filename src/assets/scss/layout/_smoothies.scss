@@ -3,39 +3,36 @@
     
 @media only screen and (max-width: 768px) {
     & {
-
         padding: 50px 0 110px;
     }
 }
-.smoothies__title {
+&__title {
     text-align: center;
     margin-bottom: 45px;
 }
 
 @media only screen and (max-width: 768px) {
-    .smoothies__title {
-
+    &__title {
         margin-bottom: 20px;
     }
 }
 
-.smoothies__text {
+&__text {
     max-width: 915px;
     text-align: center;
     margin: 0 auto 60px;
 }
 
 @media only screen and (max-width: 768px) {
-    .smoothies__text {
+    &__text {
         max-width: 700px;
     }
 }
 
-.smoothies__cards {
+&__cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
     flex: 1 0 25%;
     flex-wrap: wrap;
 
@@ -44,17 +41,16 @@
     margin: 0 auto;
 
     background-color: #f6edde;
-
 }
 
 @media only screen and (max-width: 1100px) {
-    .smoothies__cards {
+    &__cards {
         flex: 1 0 50%;
         max-width: 540px;
     }
 }
 
-.smoothies__item {
+&__item {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -65,43 +61,37 @@
 }
 
 @media only screen and (max-width: 1100px) {
-    .smoothies__item {
+    &__item {
         width: 50%;
     }
 }
 
-/* .smoothies__item:last-child{
-    
-    border-right:none;
-} */
-
-.smoothies__item:nth-child(-n+8) {
+&__item:nth-child(-n+8) {
     border-right: 2px solid #f6edde;
 }
 
-.smoothies__item:nth-child(-n+4) {
+&__item:nth-child(-n+4) {
     border-bottom: 2px solid #f6edde;
 }
 
-.smoothies__item:nth-child(4),
-.smoothies__item:last-child {
+&__item:nth-child(4),
+&__item:last-child {
     border-right: none;
 }
 
 @media only screen and (max-width: 1100px) {
-
-    .smoothies__item:nth-child(5),
-    .smoothies__item:nth-child(6) {
+    &__item:nth-child(5),
+    &__item:nth-child(6) {
         border-bottom: 2px solid #f6edde;
     }
 
-    .smoothies__item:nth-child(2),
-    .smoothies__item:nth-child(6) {
+    &__item:nth-child(2),
+    &__item:nth-child(6) {
         border-right: none;
     }
 }
 
-.smoothies__discr {
+&__discr {
     font-size: 25px;
     line-height: 40px;
     font-weight: 800;
