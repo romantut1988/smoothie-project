@@ -1,0 +1,33 @@
+@mixin flex ($value1:center, $value2:center) {
+    display: flex;
+    justify-content: $value1;
+    align-items: $value2;
+}
+
+@include flex(flex-start);
+
+@mixin font($font-size,$line-height,$font-weight,$text-align) {
+   @if font-size {font-size: $font-size;}
+   @if line-height {line-height: $line-height; }
+   @if font-weight{font-weight: $font-weight;}
+   @if text-align{text-align: $text-align;}
+}
+
+@include font(25px,1.2,false,center);
+
+@mixin wh($w,$h:$w) {
+    width: $w;
+    height: $h;
+}
+@include wh(100px);
+
+@mixin media($width, $media){
+    @media screen and(#{$width}-width:$media) {
+        @content
+    }
+}
+$lg:992px;
+
+@include media(max,992px) {
+
+}
