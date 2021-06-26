@@ -1,99 +1,103 @@
 .story {
 
-&__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
-    padding: 65px 0 160px;
-    position: relative;
-}
-
-@media only screen and (max-width: 768px) {
     &__wrap {
-        padding: 65px 0 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+        padding: 65px 0 160px;
+        position: relative;
+
+        @media only screen and (max-width: 768px) {
+            & {
+                padding: 65px 0 70px;
+            }
+        }
     }
-}
 
-&__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 0 190px 0px 0px;
-}
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 190px 0px 0px;
+    }
 
-&__title {
-    margin-bottom: 45px;
-}
+    &__title {
+        margin-bottom: 45px;
+    }
 
-&__text {
-    max-width: 515px;
-    margin-bottom: 50px;
-}
+    &__text {
+        max-width: 515px;
+        margin-bottom: 50px;
+    }
 
-&__box {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media only screen and (max-width: 768px) {
     &__box {
-        margin-left: 125px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: -173px;
+            background-image: url(../images/stamp.png);
+            display: block;
+            width: 290px;
+            height: 216px;
+
+
+            @media only screen and (max-width: 768px) {
+                &::after {
+                    top: 20px;
+                    left: -165px;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            & {
+                margin-left: 125px;
+            }
+        }
     }
-}
 
-&__img {
-    width: 100%;
-}
-
-&__box::after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: -173px;
-    background-image: url(../images/stamp.png);
-    display: block;
-    width: 290px;
-    height: 216px;
-}
-
-@media only screen and (max-width: 768px) {
-    &__box::after {
-        top: 20px;
-        left: -165px;
+    &__img {
+        width: 100%;
     }
-}
 
-&__btn {
-    position: relative;
-    max-width: 304px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-indent: 30px;
-    font-size: 21px;
-    background-color: #0aa566;
-}
 
-@media only screen and (max-width: 768px) {
+
     &__btn {
-        margin-bottom: 80px;
+        position: relative;
+        max-width: 304px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-indent: 30px;
+        font-size: 21px;
+        background-color: #0aa566;
+
+
+        &::after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 15px;
+
+            position: absolute;
+            background-image: url(../images/arrow.png);
+            top: 20px;
+            right: 45px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            & {
+                margin-bottom: 80px;
+            }
+        }
     }
-}
-
-&__btn::after {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 15px;
-
-    position: absolute;
-    background-image: url(../images/arrow.png);
-    top: 20px;
-    right: 45px;
-}
 }

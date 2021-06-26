@@ -62,19 +62,20 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+
+    &::after {
+        content: '';
+    
+        width: 30px;
+        height: 16px;
+    
+        position: absolute;
+        top: 25px;
+        right: 40px;
+    
+    
+        background-image: url(../images/arrow-white.png);
+    }
 }
 
-&__btn::after {
-    content: '';
-
-    width: 30px;
-    height: 16px;
-
-    position: absolute;
-    top: 25px;
-    right: 40px;
-
-
-    background-image: url(../images/arrow-white.png);
-}
 }
