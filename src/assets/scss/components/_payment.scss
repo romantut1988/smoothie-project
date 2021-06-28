@@ -6,11 +6,7 @@
 }
 
 .payment__box {
-
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flex(flex-start,center);
     width: 270px;
     flex-wrap: wrap;
 

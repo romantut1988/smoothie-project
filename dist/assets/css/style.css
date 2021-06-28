@@ -429,7 +429,7 @@ template {
     width: 30px;
 }
 
-@media (max-width: 1368px) {
+@media only screen and (max-width: 1368px) {
     .burger {
         display: block;
     }
@@ -447,7 +447,7 @@ template {
     background-color: #0aa566;
 }
 
-.btn .btn--left {
+.btn--left {
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -492,7 +492,7 @@ template {
     justify-content: space-between;
 }
 
-@media (max-width: 1368px) {
+@media only screen and (max-width: 1368px) {
     .navigation {
         display: none;
     }
@@ -583,16 +583,16 @@ template {
     letter-spacing: -0.02em;
 }
 
-.title .title--orange {
+.title--orange {
     color: #f7ae3b;
 }
 
-.title .title--yellow {
+.title--yellow {
     color: #cae941;
     position: relative;
 }
 
-.title .title--yellow::after {
+.title--yellow::after {
     content: '';
     display: block;
     width: 450px;
@@ -603,11 +603,7 @@ template {
     position: absolute;
 }
 
-.title .title--green {
-    color: #cae941;
-}
-
-.title .title--green {
+.title--green {
     color: #0aa566;
 }
 
@@ -770,12 +766,6 @@ template {
     background-color: #fff;
 }
 
-@media only screen and (max-width: 1100px) {
-    .smoothies__item {
-        width: 50%;
-    }
-}
-
 .smoothies__item:nth-child(-n+8) {
     border-right: 2px solid #f6edde;
 }
@@ -789,6 +779,10 @@ template {
 }
 
 @media only screen and (max-width: 1100px) {
+    .smoothies__item__item {
+        width: 50%;
+    }
+
     .smoothies__item:nth-child(5), .smoothies__item:nth-child(6) {
         border-bottom: 2px solid #f6edde;
     }
@@ -885,6 +879,9 @@ template {
     height: 15px;
     position: absolute;
     background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     top: 40%;
     right: 40px;
 }
@@ -1016,16 +1013,6 @@ template {
     align-items: center;
 }
 
-@media only screen and (max-width: 768px) {
-    .story__box {
-        margin-left: 125px;
-    }
-}
-
-.story__img {
-    width: 100%;
-}
-
 .story__box::after {
     content: '';
     position: absolute;
@@ -1038,10 +1025,20 @@ template {
 }
 
 @media only screen and (max-width: 768px) {
-    .story__box::after {
+    .story__box::after::after {
         top: 20px;
         left: -165px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .story__box {
+        margin-left: 125px;
+    }
+}
+
+.story__img {
+    width: 100%;
 }
 
 .story__btn {
@@ -1057,12 +1054,6 @@ template {
     background-color: #0aa566;
 }
 
-@media only screen and (max-width: 768px) {
-    .story__btn {
-        margin-bottom: 80px;
-    }
-}
-
 .story__btn::after {
     content: '';
     display: block;
@@ -1072,6 +1063,12 @@ template {
     background-image: url(../images/arrow.png);
     top: 20px;
     right: 45px;
+}
+
+@media only screen and (max-width: 768px) {
+    .story__btn {
+        margin-bottom: 80px;
+    }
 }
 
 .testimonials {
@@ -1105,7 +1102,7 @@ template {
 }
 
 @media only screen and (max-width: 768px) {
-    .testimonials__title {
+    .testimonials__title__title {
         margin-top: 0px;
     }
 }
@@ -1119,13 +1116,6 @@ template {
     display: flex;
     margin-bottom: 105px;
     position: relative;
-}
-
-@media only screen and (max-width: 768px) {
-    .testimonials__review {
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-    }
 }
 
 .testimonials__review::after {
@@ -1145,6 +1135,13 @@ template {
         left: 32px;
         font-size: 170px;
         top: 138px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .testimonials__review {
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 }
 
@@ -1175,6 +1172,7 @@ template {
 
 .testimonials__img {
     margin: -13px 0 0 -15px;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1193,10 +1191,6 @@ template {
     font-weight: 600;
     font-style: italic;
     color: #f7ae3b;
-}
-
-.testimonials__img {
-    z-index: 1;
 }
 
 .testimonials__wrap {
@@ -1253,14 +1247,9 @@ template {
     margin-top: 210px;
 }
 
-@media only screen and (max-width: 768px) {
-    .blog__textbox {
-        margin-top: 20px;
-    }
-}
-
 .blog__textbox::after {
     content: '';
+    display: block;
     width: 645px;
     height: 15px;
     top: -50px;
@@ -1275,6 +1264,10 @@ template {
 }
 
 @media only screen and (max-width: 768px) {
+    .blog__textbox {
+        margin-top: 20px;
+    }
+
     .blog__textbox::after {
         display: none;
         margin-top: 20px;
@@ -1346,7 +1339,7 @@ template {
     height: 384px;
 }
 
-.instagram .instagram__picture::before {
+.instagram__picture::before {
     content: '';
     display: block;
     width: 30px;

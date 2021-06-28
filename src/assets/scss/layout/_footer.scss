@@ -122,21 +122,19 @@
             content: 'Go top';
             display: block;
             position: absolute;
-            left: -62px;
-            top: 34px;
-            font-size: 16px;
-
-            background-image: url(../images/icons-footer.png);
+            left: -120px;
+            top: 20px;
+            font-size: 21px;
             background-repeat: no-repeat;
-            line-height: 40px;
-            font-weight: 700;
+            line-height: 18px;
+            /* font-weight: 700; */
             letter-spacing: -0.02em;
             color: #ffffff;
         }
 
         &::before {
             content: '';
-            background: no-repeat center/cover url(../images/arrow-white.png);
+            background: no-repeat center/cover url(../images.icons-footer);
             display: block;
             position: absolute;
             top: 0;

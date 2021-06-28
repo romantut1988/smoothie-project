@@ -30,6 +30,7 @@
 
         &::after {
             content: '';
+            display: block;
             width: 645px;
             height: 15px;
             top: -50px;
