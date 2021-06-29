@@ -1,26 +1,32 @@
-// @mixin flex ($value1:center, $value2:flex-end) {
-//     display: flex;
-//     justify-content: $value1;
-//     align-items: $value2;
-// }
+@mixin flex ($value1:center, $value2:flex-end) {
+    display: flex;
+    justify-content: $value1;
+    align-items: $value2;
+}
 
 
 // @include flex(flex-start);
 
 // @mixin font($font-size,$line-height,$font-weight,$text-align) {
-//    @if font-size {font-size: $font-size;}
-//    @if line-height {line-height: $line-height; }
-//    @if font-weight{font-weight: $font-weight;}
-//    @if text-align{text-align: $text-align;}
+//    @if $font-size {font-size: $font-size;}
+//    @if $line-height {line-height: $line-height; }
+//    @if $font-weight{font-weight: $font-weight;}
+//    @if $text-align{text-align: $text-align;}
 // }
 // @mixin font($font-size,$line-height,$font-weight,$text-align) {
-//    font-size: $font-size;
+//     font-size: $font-size;
 //     line-height: $line-height;
 //     font-weight: $font-weight;
 //     text-align: $text-align;
-//  }
-//  @include font(10px,19px,600,center)
+//     }
 
+//  @include font(25px,1.2,)
+
+//  @mixin margin($margin1,$margin2,$margin3,$margin4) {
+//      margin: $margin1 $margin2 $margin3 $margin4;
+//  }
+
+//  @include margin(25px,30px,50px,20px)
 
 // @include font(25px,1.2,false,center);
 

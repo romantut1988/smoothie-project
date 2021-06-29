@@ -4,6 +4,7 @@
     line-height: 40px;
     font-weight: 800;
     letter-spacing: -0.02em;
+    // @include font(50px,40px,null,left)
 
     &--orange {
         color: #f7ae3b;

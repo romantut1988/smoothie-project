@@ -1,6 +1,6 @@
 
 .nav__list {
-    @include flex();
+    display: flex;
     gap: 34px;
     
 }

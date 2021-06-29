@@ -22,7 +22,6 @@ const browserSync = require('browser-sync').create(); // для запуска �
 // Пути 
 const srcPath = 'src/';
 const distPath = 'dist/';
-
 const path = {
     // Исходные файлы. С этими файлами мы будем работать 
     src: {
@@ -55,8 +54,8 @@ const path = {
 const jsFiles = [
     srcPath + 'assets/js/lib.js',
     srcPath + 'assets/js/main.js',
-    srcPath + 'assets/js/burger.js'
-
+    srcPath + 'assets/js/burger.js',
+    srcPath + 'assets/js/WOW.js'
 ]
 
 
